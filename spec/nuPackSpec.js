@@ -31,10 +31,10 @@ describe("NuPack Module", function() {
 		});
 
 			it("should return correct values", function() {
-			expect(nuPack.calculateTotalPrice(100, 1, "food")).toBe(114.2);
-			expect(nuPack.calculateTotalPrice(100, 3, "pharmaceuticals")).toBe(111.1);
-			expect(nuPack.calculateTotalPrice(100, 5, "electronics")).toBe(108);
-			expect(nuPack.calculateTotalPrice(100, -50, "book")).toBe(100);
+			expect(nuPack.calculateTotalPrice(100, 1, "food")).toBe(119.91);
+			expect(nuPack.calculateTotalPrice(100, 3, "pharmaceuticals")).toBe(116.66);
+			expect(nuPack.calculateTotalPrice(100, 5, "electronics")).toBe(113.4);
+			expect(nuPack.calculateTotalPrice(100, -50, "book")).toBe(105);
 		}) 
 
 	})

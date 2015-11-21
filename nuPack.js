@@ -1,5 +1,3 @@
-
-
 var nuPack = {
 	categoryMap: {
 		pharmaceuticals: .075,
@@ -18,7 +16,6 @@ var nuPack = {
 	},
 
 	calculateTotalPrice: function(startPrice, workers, category) {
-		var finalPrice = 0;
 		var additionalMarkup = 0;
 		var markupPrice = this.calculateBaseMarkup(startPrice);
 		if (workers > 0) {
@@ -28,7 +25,7 @@ var nuPack = {
 		if (this.categoryMap[category] !== undefined) {
 			additionalMarkup += this.categoryMap[category];
 		}
-		return Number((startPrice * (additionalMarkup + 1)).toFixed(2));		
+		return Number((markupPrice * (additionalMarkup + 1)).toFixed(2));		
 	},
 }
 
